@@ -237,6 +237,11 @@ p {
     
 }
 
+
+.toCenter {
+    text-align: center;
+}
+
 * {
     box-sizing: border-box;
     display: block;
