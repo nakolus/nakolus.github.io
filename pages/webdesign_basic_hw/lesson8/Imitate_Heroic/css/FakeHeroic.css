@@ -1,0 +1,519 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-spacer {
+    position: relative;
+    background-color: #D0D0D0;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 0.3em;
+    padding: 2em;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.hero-spacer h1 {
+    font-size: 36pt;
+    line-height: 200%;
+}
+
+.hero-spacer p {
+    font-size: 12pt;
+}
+
+.hero-middle {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 36px;
+    font-size: 16pt;
+    font-weight: 100;
+    padding: 12px;
+}
+
+.wrapper {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+
+.hero-feature {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    border: 0.1em solid #ABABAB;
+    height: auto;
+   
+}
+
+.thumbnail {
+    position: relative;
+    display: block;
+    left: auto;
+    right: auto;
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+    
+}
+
+.caption {
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+
+
+.btn {
+    background-color: #2971DF;
+    text-align: center;
+    line-height: 150%;
+    font-size: 16px;
+    width: 150px;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    height: auto;
+}
+
+.btn a:link, .btn-A a:link {
+    text-decoration: none;
+    color: #DADADA;
+}
+
+.btn a:visited, .btn-A a:visited {
+    text-decoration: none;
+    color: #DADADA;
+}
+
+.btn a:hover, .btn-A a:hover {
+    text-decoration: none;
+    color: #F8BA4E;
+}
+
+.btn a:active, .btn-A a:active {
+    text-decoration: none;
+    color: #B27917;
+}
+
+.btn-B a:link {
+    text-decoration: none;
+    color: #484848;
+}
+
+.btn-B a:visited {
+    text-decoration: none;
+    color: #484848;
+}
+
+.btn-B a:hover {
+    text-decoration: none;
+    color: #F8BA4E;
+}
+
+.btn-B a:active {
+    text-decoration: none;
+    color: #B27917;
+}
+
+
+
+.btnSpace {
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-A {
+
+    display: inline-block;
+
+    background-color: #2971DF;
+    text-align: center;
+    line-height: 150%;
+    font-size: 12px;
+    width: 80px;
+    padding: 0.25em;
+    border-radius: 0.1em;
+    height: auto;
+}
+
+.btn-B {
+
+    display: inline-block;
+
+    background-color: #EAEAEA;
+    text-align: center;
+    line-height: 150%;
+    font-size: 12px;
+    width: 80px;
+    padding: 0.25em;
+    border-radius: 0.1em;
+    height: auto;
+}
+
+.final {
+    display: block;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+footer {
+        margin-top: 50px 0;
+        margin-bottom: 120px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .hero-spacer {
+        position: relative;
+        background-color: #D0D0D0;
+        margin: auto;
+        margin-top: 36px;
+        border-radius: 0.2em;
+        padding: 1em;
+        box-shadow: 2px 2px 2px grey;
+    }
+    .hero-spacer h1 {
+        font-size: 24pt;
+        line-height: 150%;
+    }
+    .hero-spacer p {
+        font-size: 14pt;
+    }
+}
+
+
+/*定義 col 不同視窗顯示效果*/
+
+[class*="col-"] {
+    float: left;
+}
+
+@media screen and (min-width: 1201px) {
+    /*視窗寬度 >= 1200px，將使用這裡的 CSS。*/
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 22.5%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* 視窗寬度 >= 768px且寬度 <= 1200px將使用這裡的 CSS。*/
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 45%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* 視窗寬度 >= 768px且寬度 <= 1200px將使用這裡的 CSS。*/
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/*定義 col 不同視窗顯示效果*/
+
+
+/*外部容器*/
+
+.container {
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:500px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+
+/*外部容器*/
+
+
+/*巡覽列*/
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    background-color: #222;
+    border-color: #080808;
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 4px;
+        position: relative;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 4px;
+    }
+    .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        border-radius: 4px;
+    }
+    .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background-color: #222;
+    color: #AAAAAA;
+    text-align: center;
+    line-height: 45px;
+}
+
+nav ul li a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: #EFEFEF;
+}
+
+nav ul li:hover a {
+    color: #EFEFEF;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    float: left;
+}
+
+.spheader {
+    font-size: 14pt;
+}
+
+.subheader {
+    font-size: 12pt;
+    padding: 0.12em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.collapse {
+    display: none;
+}
+
+.smallA {
+    display: none;
+}
+
+.InnerContent {
+    display: none;
+}
+
+.InnerContent-sp {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .subheader {
+        display: none;
+    }
+    .collapse {
+        display: block;
+        float: right;
+    }
+    .smallA {
+        position: fixed;
+    }
+    .InnerContent {
+        position: relative;
+        padding: 1.8em;
+        display: block;
+        margin: auto;
+        text-align: center;
+        left: 10px;
+        right: auto;
+        z-index: 500;
+    }
+    .InnerContent-sp {
+        position: relative;
+        padding: 0.2em;
+        display: block;
+        margin: auto;
+        text-align: center;
+        right: auto;
+        left: 2px;
+        z-index: 500;
+    }
+}
+
+
+}
+
+/*巡覽列*/
+
+/*content*/
