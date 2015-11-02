@@ -333,32 +333,73 @@ footer {
 
 /*外部容器*/
 
-.container {
+.container-1, .container-2 {
     
     margin-right: auto;
     margin-left: auto;
 }
 
-@media (min-width:500px) {
-    .container {
+.container-1 {
+    z-index: 5;
+}
+
+.container-2 {
+
+    z-index: -30;
+}
+
+@media (max-width:767px) {
+    .container-1, .container-2 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 2.5%;
+        right: auto;
         width: 95%;
     }
+
+    .wrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: -2.5%;
+        right: auto;
+        width: 95%;
+    }
+
+    
 }
 
 @media (min-width:768px) {
-    .container {
-        width: 750px
+    .container-1, .container-2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: -0.125%;
+        right: 1.2%;
+        width: 96%;
+    }
+
+    .wrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 1.25%;
+        right: auto;
+        width: 100%;
     }
 }
 
 @media (min-width:992px) {
-    .container {
+    .container-1, .container-2 {
+        position: relative;
         width: 970px
     }
 }
 
 @media (min-width:1200px) {
-    .container {
+    .container-1, .container-2 {
+        position: relative;
         width: 1170px
     }
 }
