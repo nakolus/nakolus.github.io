@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="Big-5">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta:renderer></meta:renderer>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta:author></meta:author>
+    <meta charset="UTF-8>
     <meta name="keywords" content="Keyword 1,Keyword 2">
     <meta name="description" content="description">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -72,13 +68,13 @@ ul {
     <div class="container">
         <div align="CENTER" width="75%">
             <form name="CheckNum">
-                <p>ݔ���Ă�����ͬ�Ĕ���</p>
+                <p>輸入四個不相同的數字</p>
                 <p>( 0 ~ 9 )</p>
                 <br>
                 <input type="TEXT" name="chknum" size="4" maxlength="4">
                 <p>
-                    <input type="BUTTON" name="start" value="�y����" onclick="InCheck()">
-                    <input type="BUTTON" name="restart" value="�����[��" onclick="ReStart()">
+                    <input type="BUTTON" name="start" value="猜測數字" onclick="InCheck()">
+                    <input type="BUTTON" name="restart" value="重新遊戲" onclick="ReStart()">
                     <br>
                     <br>
                     <div class="Cheat">
@@ -95,7 +91,7 @@ ul {
             </form>
         </div>
         <div align="CENTER" width="75%">
-            <h5>�� &nbsp &nbsp &nbsp ��B</h5>
+            <h5>答案 &nbsp &nbsp &nbsp 狀態</h5>
             <form name="KeyIn">
                 <input type="TEXT" name="keyin1" size="8" disabled>
                 <br>
@@ -124,10 +120,10 @@ ul {
                 <p>
                     <br>
                 </p>
-                <p>"A" ��ʾ���ִ����ִ��� , �Ҍ�����ͬһ��λ��</p>
-                <p>"B" ��ʾ���ִ����ִ��� , �Ҍ����ڲ�ͬ��λ��</p>
-                <p>��: �𰸞� "1234" �r��ݔ�� "1302" �t��B�� "1A2B"</p>
-                <p>�ɲ�ʮ��</p>
+                <p>"A" 表示數字存在字串中 , 且對應在同一欄位上</p>
+                <p>"B" 表示數字存在字串中 , 且對應在不同欄位上</p>
+                <p>例: 答案為 "1234" 時，輸入 "1302" 則狀態為 "1A2B"</p>
+                <p>可猜十次</p>
             </ul>
         </div>
     </div>
@@ -196,12 +192,12 @@ ul {
         var a = 0;
         var b = 0;
         if (count == 10) {
-            alert("�����棬Ո�������[��ȡ�µĔ��ִ�");
+            alert("重新玩，請按重新遊戲，取新的數字串");
             return;
         }
         if (document.CheckNum.chknum.value.length < 4) {
             document.CheckNum.chknum.value = "";
-            alert("Ոݔ���Ă���ͬ��̖�a��");
+            alert("請輸入四個不同的號碼．");
             return;
         }
         ToChkChar();
@@ -212,11 +208,11 @@ ul {
         }
         if (y == 1) {
             document.CheckNum.chknum.value = "";
-            alert("ݔ����ͬ����");
+            alert("輸入相同數字");
             return;
         }
         if (document.CheckNum.chknum.value == document.CheckNum.defnum.value && count < 10) {
-            alert("������.");
+            alert("答對了.");
             count = 10;
             return;
         }
@@ -240,7 +236,7 @@ ul {
         if (count == 9) document.KeyIn.keyin9.value = document.CheckNum.chknum.value + "    " + a + "A" + b + "B";
         if (count == 10) {
             document.KeyIn.keyin10.value = document.CheckNum.chknum.value + "    " + a + "A" + b + "B";
-            alert("ʮ�ζ��]����");
+            alert("十次都沒猜中");
             return;
         }
         document.CheckNum.chknum.value = "";
