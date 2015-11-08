@@ -1,0 +1,50 @@
+body {
+	background-color: #171717;
+}
+
+.myAnchor-01 {
+	box-sizing:border-box;
+
+	padding: 12px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	margin-left:auto; 
+	margin-right:auto;
+	top: 180px;
+}
+
+.DoMe-01 {
+
+}
+
+.DoMe-01 img {
+	margin: 0 auto;
+    border: 0.28em solid #8A8A8A;
+    padding: 12px;
+    width: 150px;
+}
+
+.DoMe-02 {
+	position: relative;
+	top: 36px;
+}
+
+.DoMe-02 p {
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 200;
+	color: #E4E4E4;
+	line-height: 150%;
+}
+
+.DoMe-02 img {
+	margin: 0 auto;
+	line-height: 200%;
+
+    width: 72px;
+}
+
+.DoMe-02 hr {
+	width: 300px;
+}
