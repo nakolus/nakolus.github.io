@@ -1,0 +1,157 @@
+.proj-mb-c01 {
+    background-image: url(../img/projects/proj-mebox-detail/c01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+.proj-mb-c01:hover {
+    background-image: url(../img/projects/proj-mebox-detail/c01_lighting.png);
+}
+
+.proj-mb-c02 {
+    background-image: url(../img/projects/proj-mebox-detail/c02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+.proj-mb-c02:hover {
+    background-image: url(../img/projects/proj-mebox-detail/c02_lighting.png);
+}
+
+.proj-mb-c03 {
+    background-image: url(../img/projects/proj-mebox-detail/c03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+.proj-mb-c04 {
+    background-image: url(../img/projects/proj-mebox-detail/c04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+.proj-mb-c05 {
+    background-image: url(../img/projects/proj-mebox-detail/c05.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196px;
+    height: 196px;
+    float: left;
+}
+
+.proj-mb-c05:hover {
+    background-image: url(../img/projects/proj-mebox-detail/c05_lighting.png);
+}
+
+@media (min-width:768px) and (max-width: 1279px) {
+    .proj-mb-c01 {
+        background-image: url(../img/projects/proj-mebox-detail/c01.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 125px;
+        float: left;
+    }
+    .proj-mb-c02 {
+        background-image: url(../img/projects/proj-mebox-detail/c02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 125px;
+        float: left;
+    }
+    .proj-mb-c03 {
+        background-image: url(../img/projects/proj-mebox-detail/c03.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 125px;
+        float: left;
+    }
+    .proj-mb-c04 {
+        background-image: url(../img/projects/proj-mebox-detail/c04.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 125px;
+        float: left;
+    }
+    .proj-mb-c05 {
+        background-image: url(../img/projects/proj-mebox-detail/c05.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 125px;
+        height: 125px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .proj-mb-c01 {
+        background-image: url(../img/projects/proj-mebox-detail/c01.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
+        float: left;
+    }
+    .proj-mb-c02 {
+        background-image: url(../img/projects/proj-mebox-detail/c02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
+        float: left;
+    }
+    .proj-mb-c03 {
+        background-image: url(../img/projects/proj-mebox-detail/c03.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
+        float: left;
+    }
+    .proj-mb-c04 {
+        background-image: url(../img/projects/proj-mebox-detail/c04.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
+        float: left;
+    }
+    .proj-mb-c05 {
+        background-image: url(../img/projects/proj-mebox-detail/c05.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 56px;
+        height: 56px;
+        float: left;
+    }
+}

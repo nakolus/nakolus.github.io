@@ -1,0 +1,129 @@
+/* ---- grid ---- */
+
+.grid {
+    background: #a2a2a2;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* clear fix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ---- .grid-item ---- */
+
+.grid-sizer, .grid-item {
+    width: 10%;
+    padding: 16px;
+}
+
+.grid-item {
+    float: left;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .grid-sizer, .grid-item {
+        width: 20%;
+        padding: 8px;
+    }
+}
+
+.playBtn {
+    position: absolute;
+    display: block;
+    background: url(../img/play-btn.png);
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0.8;
+}
+
+.overlayBtn {
+    width: 15%;
+    height: 23%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 38.7%;
+    left: 42.5%;
+    opacity: 0;
+    -webkit-transition: 0.48s;
+    transition: 0.48s;
+}
+
+.playBtn:hover>.overlayBtn {
+    width: 15%;
+    height: 23%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 38.7%;
+    left: 42.5%;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.overlayBtn4Tra {
+    width: 15%;
+    height: 18%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 41%;
+    left: 42.25%;
+    opacity: 0;
+    -webkit-transition: 0.48s;
+    transition: 0.48s;
+}
+
+.playBtn:hover>.overlayBtn4Tra {
+    width: 15%;
+    height: 18%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 41%;
+    left: 42.25%;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.overlayBtn4ZC {
+    width: 15%;
+    height: 22%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 40%;
+    left: 42.25%;
+    opacity: 0;
+    -webkit-transition: 0.48s;
+    transition: 0.48s;
+}
+
+.playBtn:hover>.overlayBtn4ZC {
+    width: 15%;
+    height: 22%;
+    border-radius: 50%;
+    position: absolute;
+    background-position: center;
+    top: 40%;
+    left: 42.25%;
+    background-color: #000;
+    opacity: 0.3;
+}
