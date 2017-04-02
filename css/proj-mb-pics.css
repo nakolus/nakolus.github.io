@@ -8,7 +8,7 @@
     float: left;
 }
 
-.proj-mb-c01:hover, .proj-mb-c01:focus, .proj-mb-c01:active {
+.proj-mb-c01:hover, .proj-mb-c01:active {
     background-image: url(../img/projects/proj-mebox-detail/c01_lighting.png);
 }
 
@@ -22,7 +22,7 @@
     float: left;
 }
 
-.proj-mb-c02:hover, .proj-mb-c02:focus, .proj-mb-c02:active {
+.proj-mb-c02:hover, .proj-mb-c02:active {
     background-image: url(../img/projects/proj-mebox-detail/c02_lighting.png);
 }
 
@@ -56,7 +56,7 @@
     float: left;
 }
 
-.proj-mb-c05:hover, .proj-mb-c05:focus, .proj-mb-c05:active{
+.proj-mb-c05:hover, .proj-mb-c05:active {
     background-image: url(../img/projects/proj-mebox-detail/c05_lighting.png);
 }
 
